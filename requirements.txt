@@ -1,0 +1,2 @@
+Scrapy=1.6.0
+username-generator=2.0.0
