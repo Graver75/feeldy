@@ -1,7 +1,10 @@
 {
   "urls": {
-    "register": "",
+    "register": "https://feedly.com/v3/auth/login?state=A7FJXt3XbZv1KOY4k_8eL5NKatIxThdzlifTfAccZoD7R21KzK3poMjPta-idcpmRtTwKhMza5uUR9SNBjENu1Qw_aFR0gVJILPobjxuVbEBfoEWmnC9HUcKcI9slTyecdYPtzMcmUrTPxJXBdHWKOyNVErjaJZkA2hHLZZhBMzqLlv5H6io8bp-_Ng8gL8AsOQi0skI5jSO74d8ne6X-OLYf2cEzc00&newUser=true",
     "login": ""
   },
-  "proxies" : []
+  "proxy" : {
+    "ip": "134.209.231.38",
+    "port": "3128"
+  }
 }

@@ -19,10 +19,18 @@ class RegisterSpider(Spider):
             "login": get_email_by_uname(name),
             "password": get_random_pass()
         }
+        print(data)
+
+        proxy = CONFIG["proxy"]
         yield FormRequest(
             url=self.register_url,
             formdata=data,
-            callback=self.after_register
+            callback=self.after_register,
+
+            meta={
+                "proxy_info": proxy,
+                "proxy": "http://%s:%s" % (proxy["ip"], proxy["port"])
+            }
         )
 
     def after_register(self, response):
