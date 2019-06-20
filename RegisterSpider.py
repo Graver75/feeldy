@@ -19,13 +19,12 @@ class RegisterSpider(Spider):
             "login": get_email_by_uname(name),
             "password": get_random_pass()
         }
-        print(data)
 
         proxy = CONFIG["proxy"]
         yield FormRequest(
             url=self.register_url,
             formdata=data,
-            callback=self.after_register,
+            callback=self.after_register(data),
 
             meta={
                 "proxy_info": proxy,
@@ -33,5 +32,14 @@ class RegisterSpider(Spider):
             }
         )
 
-    def after_register(self, response):
-        pass
+    def after_register(self, data):
+        with open('users.json', 'r') as f:
+            users = json.load(f)
+            users.append(data)
+
+        with open('users.json', 'w') as f:
+            json.dump(users, f)
+
+        return (
+            lambda response: self.logger.info('Success.')
+        )
