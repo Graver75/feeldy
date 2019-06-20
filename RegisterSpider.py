@@ -9,10 +9,12 @@ with open('config.json') as f:
 
 class RegisterSpider(Spider):
     name = "register_feeldly_spider"
-    register_url = CONFIG['urls']['register']
-    start_urls = [register_url]
+    page_url = CONFIG['urls']['page']
+    start_urls = [page_url]
 
     def parse(self, response):
+        register_url = response.xpath("//a/@href")[1].extract() # feedly link
+
         name = get_random_uname()
         data = {
             "name": name,
@@ -22,7 +24,7 @@ class RegisterSpider(Spider):
 
         proxy = CONFIG["proxy"]
         yield FormRequest(
-            url=self.register_url,
+            url=register_url,
             formdata=data,
             callback=self.after_register(data),
 

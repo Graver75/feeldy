@@ -1,7 +1,6 @@
 {
   "urls": {
-    "register": "https://feedly.com/v3/auth/login?newUser=true&state=",
-    "login": ""
+    "page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561061862920&ct=feedly.desktop&landingPage=welcome&cv=31.0.381&pageRef=welcome&mode=signup"
   },
   "proxy" : {
     "ip": "134.209.231.38",
