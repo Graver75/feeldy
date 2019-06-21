@@ -1,6 +1,6 @@
 from scrapy import Spider, FormRequest
 from utils import get_email_by_uname, get_random_pass, get_random_uname
-import json
+import json, random
 
 
 with open('config.json') as f:
@@ -22,7 +22,7 @@ class RegisterSpider(Spider):
             "password": get_random_pass()
         }
 
-        proxy = CONFIG["proxy"]
+        proxy = random.choice(CONFIG["proxy"])
         yield FormRequest(
             url=register_url,
             formdata=data,
