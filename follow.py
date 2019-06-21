@@ -45,8 +45,8 @@ def follow(driver):
                 create_div.click()
 
 
+def follow_topics(username, password):
+    process.crawl(get_login_class(username, password, login))
+    process.start()
 
-
-
-process.crawl(get_login_class("mad_device@gravmail.com", "JzscyYVz", login))
-process.start()
+#follow_topics("mad_device@gravmail.com", "JzscyYVz")

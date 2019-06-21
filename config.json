@@ -1,1 +1,23 @@
-{"urls": {"follow": [{"title": "Fast Company", "value": "https://feedly.com/i/discover/sources/search/topic/design"}], "act_log_page": "https://feedly.com/v3/auth/login?state=Aw02ly2HugrQo8PqxNW1SqNEZEhFHznzfP2cxi6RPBOKxraENNNOgSt4-xEQ2yvHnUJqWx02ubzYCpdiqww9qFQb4cKXkLwDNbvLq-Gr3r9R_PaIqNANJbhT4AYXZEjhw0RZ91s7lgQqtx3hebgJN3DXD3dqEkVSZt0zhYeEzEVAcEfNB3mOPe8n_nFHy_zbUcwYfShvgOboZZkgYg52e9UfSQxE4AmuyVM9AVTDkjSUeyE", "log_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561120323514&ct=feedly.desktop&landingPage=welcome&cv=31.0.383&pageRef=welcome/logged-out&mode=login", "reg_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561061862920&ct=feedly.desktop&landingPage=welcome&cv=31.0.381&pageRef=welcome&mode=signup"}, "proxy": [{"ip": "134.209.231.38", "port": "3128"}]}
+{
+  "proxy": [
+    {
+      "port": "3128",
+      "ip": "134.209.231.38"
+    }
+  ],
+  "urls": {
+    "act_log_page": "https://feedly.com/v3/auth/login?state=A-zbFn-pmLmhayYGLQD-5-CbwIp8UEQm3nQZUZ_LMvn2rQaAWQK5XrAZvRm8M37IhAXWMQeB3jw7iwQYL7N4pe75Jf2hQnWa9Kx8VGYNOFLY-K1sVha4hdB9MHLESx8IuddhUaXF6gb6WHNgUcEESy1FCtV3Oz8qbQdwMonxNMxSm-sLVLcvFnWp0FOUUUpbaIewmY-qzhIUxp3G2Vz5cwa4HND92u_IfgrKl6rbEXdTg9g",
+    "reg_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561061862920&ct=feedly.desktop&landingPage=welcome&cv=31.0.381&pageRef=welcome&mode=signup",
+    "follow": [
+      {
+        "value": "https://feedly.com/i/discover/sources/search/topic/it",
+        "title": "Engadget"
+      },
+      {
+        "value": "https://feedly.com/i/discover/sources/search/topic/medicine",
+        "title": "The Lancet"
+      }
+    ],
+    "log_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561120323514&ct=feedly.desktop&landingPage=welcome&cv=31.0.383&pageRef=welcome/logged-out&mode=login"
+  }
+}
