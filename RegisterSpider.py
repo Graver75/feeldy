@@ -9,7 +9,7 @@ with open('config.json') as f:
 
 class RegisterSpider(Spider):
     name = "register_feeldly_spider"
-    page_url = CONFIG['urls']['page']
+    page_url = CONFIG['urls']['reg_page']
     start_urls = [page_url]
 
     def parse(self, response):

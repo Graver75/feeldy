@@ -1,11 +1,19 @@
 {
-  "urls": {
-    "page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561061862920&ct=feedly.desktop&landingPage=welcome&cv=31.0.381&pageRef=welcome&mode=signup"
-  },
-  "proxy" : [
+  "proxy": [
     {
-    "ip": "134.209.231.38",
-    "port": "3128"
+      "port": "3128",
+      "ip": "134.209.231.38"
     }
-  ]
+  ],
+  "urls": {
+    "follow": [
+      {
+        "value": "https://feedly.com/i/discover/sources/search/topic/design",
+        "title": "Fast Company"
+      }
+    ],
+    "act_log_page": "https://feedly.com/v3/auth/login?state=A10sJLX9FBIeWi6VHG79YUXuvgxnAD5ogmu1cSqTzMOf5fjixvKObBFKF3cruOfgMu8JpE7NeZIXMVGs6Q6_Pojy1N_SVoJaP3ZItTwWRzFxpHAWgDD9sOGxOs3NO9PoU2rhjkEoNs6i7ffyLjFnXKq-fVxk1uqjX7QZlo8t-FsxER7iIhVYCNT7nkb2hG7JYLOeYAJA7j7NMcCmbioeVFX6y0aegRQmuuSAxx4JV7TjGoU",
+    "reg_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561061862920&ct=feedly.desktop&landingPage=welcome&cv=31.0.381&pageRef=welcome&mode=signup",
+    "log_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561120323514&ct=feedly.desktop&landingPage=welcome&cv=31.0.383&pageRef=welcome/logged-out&mode=login"
+  }
 }
