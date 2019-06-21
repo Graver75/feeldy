@@ -1,2 +1,3 @@
 Scrapy=1.6.0
 username-generator=2.0.0
+Selenium=3.141.0
