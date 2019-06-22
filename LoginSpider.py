@@ -13,10 +13,6 @@ def get_login_class(login, password, callback):
 
         def parse(self, response):
             login_url = response.xpath("//a/@href")[1].extract()  # feedly link
-            CONFIG["urls"]["act_log_page"] = login_url
-            with open('config.json', 'w') as f:
-                json.dump(CONFIG, f)
-
             data = {
                 "login": login,
                 "password": password
