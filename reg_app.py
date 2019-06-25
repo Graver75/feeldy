@@ -1,6 +1,6 @@
 from RegisterSpider import RegisterSpider
 from scrapy.crawler import CrawlerProcess
-import time, json
+import time, json, logging
 
 with open('config.json') as f:
     TIMEOUT = json.load(f)["register_timeout"]
@@ -8,6 +8,7 @@ with open('config.json') as f:
 
 
 def register(temp=None):
+    logging.getLogger('scrapy').propagate = False
     process = CrawlerProcess({
         'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
     })
