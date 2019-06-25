@@ -39,7 +39,7 @@ class RegisterSpider(Spider):
         )
 
     def after_register(self, response):
-        if response.status == 200:
+        if "Login successful" in response._cached_ubody :
             with open('users.json', 'r') as f:
                 users = json.load(f)
                 users.append(self.data)
