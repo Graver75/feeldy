@@ -1,8 +1,9 @@
 {
+  "register_timeout": 5,
   "proxy": [
     {
-      "ip": "134.209.231.38",
-      "port": "3128"
+      "ip": "165.22.94.50",
+      "port": "8118"
     }
   ],
   "urls": {
@@ -11,12 +12,12 @@
     "reg_page": "https://feedly.com/v3/auth/auth?client_id=feedly&redirect_uri=https%3A%2F%2Ffeedly.com%2Ffeedly.html&scope=https%3A%2F%2Fcloud.feedly.com%2Fsubscriptions&response_type=code&ck=1561225263359&ct=feedly.desktop&landingPage=welcome&cv=31.0.384&pageRef=welcome&mode=signup",
     "follow": [
       {
-        "title": "PCWorld",
+        "title": "Engadget",
         "value": "https://feedly.com/i/discover/sources/search/topic/it"
       },
       {
-        "title": "Harvard Business Review",
-        "value": "https://feedly.com/i/discover/sources/search/topic/business"
+        "title": "The Verge",
+        "value": "https://feedly.com/i/discover/sources/search/topic/it"
       }
     ]
   }
