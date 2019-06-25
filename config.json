@@ -1,5 +1,9 @@
 {
-  "register_timeout": 5,
+  "timeouts": {
+    "register": 5,
+    "page_loading": 9,
+    "page_action": 1
+  },
   "proxy": [
     {
       "ip": "103.72.154.31",

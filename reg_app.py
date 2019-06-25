@@ -3,7 +3,7 @@ from scrapy.crawler import CrawlerProcess
 import time, json, logging
 
 with open('config.json') as f:
-    TIMEOUT = json.load(f)["register_timeout"]
+    TIMEOUT = json.load(f)["timeouts"]["register"]
 
 
 
