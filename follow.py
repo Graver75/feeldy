@@ -79,8 +79,10 @@ def follow_topics(username, password):
 
 
 def mass_follow(a):
+    logger.info('Bootstrapping...')
     for i, user in enumerate(users):
         del users[i]
         follow_topics(user['login'], user['password'])
+    logger.info('Done.')
 
 mass_follow(None)
