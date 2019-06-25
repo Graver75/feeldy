@@ -22,7 +22,7 @@ def get_login_class(login, password, callback):
             yield FormRequest(
                 url=login_url,
                 formdata=data,
-                callback=callback,
+                callback=callback(data["login"]),
 
                 meta={
                     "proxy_info": proxy,

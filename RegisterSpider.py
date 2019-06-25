@@ -48,4 +48,7 @@ class RegisterSpider(Spider):
                 json.dump(users, f)
             logger.info("User " + self.data["name"] + " has been created.")
         else:
-            logger.info("Error creating user " + self.data["name"] + ": " + str(response.status))
+            if "recaptcha" in response._cached_ubody:
+                logger.error('Error creating user ' + self.data["name"] + ": captcha detected. Please, update proxy list.")
+            else:
+                logger.error("Error creating user " + self.data["name"] + ": " + str(response.status))
