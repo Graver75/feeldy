@@ -20,7 +20,7 @@ with open('users.json') as f:
 def login(name):
     def curry(response):
         if "Login successful" in response._cached_ubody:
-            logging.info('User ' + name + ' successfully logged in')
+            logger.info('User ' + name + ' successfully logged in')
             options = Options()
             options.headless = True
             # driver = webdriver.Firefox() # head version
@@ -30,7 +30,7 @@ def login(name):
             time.sleep(3)  # loading page and getting session cookie
             follow(driver)
         else:
-            logging.error('Error logging in user ' + name)
+            logger.error('Error logging in user ' + name)
     return curry
 
 
