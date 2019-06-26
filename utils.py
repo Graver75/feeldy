@@ -12,5 +12,5 @@ def get_random_uname():
     return get_uname(4, 10, True)
 
 
-def get_email_by_uname(uname):
-    return uname + "@gravmail.com"
+def get_email_by_uname(uname, domain):
+    return uname + "@" + domain

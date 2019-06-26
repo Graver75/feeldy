@@ -1,4 +1,5 @@
 {
+  "domains": ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"],
   "timeouts": {
     "register": 5,
     "page_loading": 9,
@@ -6,8 +7,8 @@
   },
   "proxy": [
     {
-      "ip": "213.136.73.196",
-      "port": "3128"
+      "ip": "68.183.212.233",
+      "port": "8080"
     }
   ],
   "urls": {

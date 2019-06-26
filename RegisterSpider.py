@@ -19,9 +19,11 @@ class RegisterSpider(Spider):
         register_url = response.xpath("//a/@href")[1].extract() # feedly link
 
         name = get_random_uname()
+        domain = random.choice(CONFIG["domains"])
+
         self.data = {
             "name": name,
-            "login": get_email_by_uname(name),
+            "login": get_email_by_uname(name, domain),
             "password": get_random_pass()
         }
 
